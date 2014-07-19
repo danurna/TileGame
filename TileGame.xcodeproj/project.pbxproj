@@ -200,8 +200,7 @@
 		F3364147197AB86F005F2D2C /* LICENSE_Chipmunk.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3364146197AB86F005F2D2C /* LICENSE_Chipmunk.txt */; };
 		F336414B197AB86F005F2D2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F336414A197AB86F005F2D2C /* main.m */; };
 		F336414F197AB86F005F2D2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F336414E197AB86F005F2D2C /* AppDelegate.m */; };
-		F3364152197AB86F005F2D2C /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F3364151197AB86F005F2D2C /* HelloWorldScene.m */; };
-		F3364155197AB86F005F2D2C /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F3364154197AB86F005F2D2C /* IntroScene.m */; };
+		F3364155197AB86F005F2D2C /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F3364154197AB86F005F2D2C /* GameScene.m */; };
 		F3364166197AB907005F2D2C /* hit.caf in Resources */ = {isa = PBXBuildFile; fileRef = F336415F197AB907005F2D2C /* hit.caf */; };
 		F3364167197AB907005F2D2C /* meta_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = F3364160197AB907005F2D2C /* meta_tiles.png */; };
 		F3364168197AB907005F2D2C /* move.caf in Resources */ = {isa = PBXBuildFile; fileRef = F3364161197AB907005F2D2C /* move.caf */; };
@@ -617,10 +616,8 @@
 		F336414A197AB86F005F2D2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		F336414D197AB86F005F2D2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		F336414E197AB86F005F2D2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		F3364150197AB86F005F2D2C /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		F3364151197AB86F005F2D2C /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
-		F3364153197AB86F005F2D2C /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
-		F3364154197AB86F005F2D2C /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
+		F3364153197AB86F005F2D2C /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Classes/GameScene.h; sourceTree = "<group>"; };
+		F3364154197AB86F005F2D2C /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = Classes/GameScene.m; sourceTree = "<group>"; };
 		F336415F197AB907005F2D2C /* hit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hit.caf; sourceTree = "<group>"; };
 		F3364160197AB907005F2D2C /* meta_tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meta_tiles.png; sourceTree = "<group>"; };
 		F3364161197AB907005F2D2C /* move.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = move.caf; sourceTree = "<group>"; };
@@ -1441,10 +1438,8 @@
 			children = (
 				F336414D197AB86F005F2D2C /* AppDelegate.h */,
 				F336414E197AB86F005F2D2C /* AppDelegate.m */,
-				F3364150197AB86F005F2D2C /* HelloWorldScene.h */,
-				F3364151197AB86F005F2D2C /* HelloWorldScene.m */,
-				F3364153197AB86F005F2D2C /* IntroScene.h */,
-				F3364154197AB86F005F2D2C /* IntroScene.m */,
+				F3364153197AB86F005F2D2C /* GameScene.h */,
+				F3364154197AB86F005F2D2C /* GameScene.m */,
 				F336415E197AB907005F2D2C /* TileGameResources */,
 			);
 			name = Classes;
@@ -1595,7 +1590,6 @@
 				F3363F28197AB86D005F2D2C /* CCEffect.m in Sources */,
 				F33640C6197AB86E005F2D2C /* CCBAnimationManager.m in Sources */,
 				F3364034197AB86E005F2D2C /* CCVertex.m in Sources */,
-				F3364152197AB86F005F2D2C /* HelloWorldScene.m in Sources */,
 				F3363F68197AB86D005F2D2C /* CCAnimationCache.m in Sources */,
 				F3364022197AB86E005F2D2C /* base64.c in Sources */,
 				F3363FAB197AB86E005F2D2C /* CCParticleSystemBase.m in Sources */,
@@ -1700,7 +1694,7 @@
 				F3363FA0197AB86D005F2D2C /* CCParticleBatchNode.m in Sources */,
 				F336403A197AB86E005F2D2C /* NSAttributedString+CCAdditions.m in Sources */,
 				F336414B197AB86F005F2D2C /* main.m in Sources */,
-				F3364155197AB86F005F2D2C /* IntroScene.m in Sources */,
+				F3364155197AB86F005F2D2C /* GameScene.m in Sources */,
 				F3363F38197AB86D005F2D2C /* CCEffectStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
