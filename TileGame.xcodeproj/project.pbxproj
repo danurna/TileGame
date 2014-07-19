@@ -202,6 +202,14 @@
 		F336414F197AB86F005F2D2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F336414E197AB86F005F2D2C /* AppDelegate.m */; };
 		F3364152197AB86F005F2D2C /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F3364151197AB86F005F2D2C /* HelloWorldScene.m */; };
 		F3364155197AB86F005F2D2C /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F3364154197AB86F005F2D2C /* IntroScene.m */; };
+		F3364166197AB907005F2D2C /* hit.caf in Resources */ = {isa = PBXBuildFile; fileRef = F336415F197AB907005F2D2C /* hit.caf */; };
+		F3364167197AB907005F2D2C /* meta_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = F3364160197AB907005F2D2C /* meta_tiles.png */; };
+		F3364168197AB907005F2D2C /* move.caf in Resources */ = {isa = PBXBuildFile; fileRef = F3364161197AB907005F2D2C /* move.caf */; };
+		F3364169197AB907005F2D2C /* pickup.caf in Resources */ = {isa = PBXBuildFile; fileRef = F3364162197AB907005F2D2C /* pickup.caf */; };
+		F336416A197AB907005F2D2C /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = F3364163197AB907005F2D2C /* Player.png */; };
+		F336416B197AB907005F2D2C /* TileMap.caf in Resources */ = {isa = PBXBuildFile; fileRef = F3364164197AB907005F2D2C /* TileMap.caf */; };
+		F336416C197AB907005F2D2C /* tmw_desert_spacing.png in Resources */ = {isa = PBXBuildFile; fileRef = F3364165197AB907005F2D2C /* tmw_desert_spacing.png */; };
+		F336416E197ABF45005F2D2C /* TileMap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F336416D197ABF45005F2D2C /* TileMap.tmx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -613,6 +621,14 @@
 		F3364151197AB86F005F2D2C /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
 		F3364153197AB86F005F2D2C /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
 		F3364154197AB86F005F2D2C /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
+		F336415F197AB907005F2D2C /* hit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hit.caf; sourceTree = "<group>"; };
+		F3364160197AB907005F2D2C /* meta_tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meta_tiles.png; sourceTree = "<group>"; };
+		F3364161197AB907005F2D2C /* move.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = move.caf; sourceTree = "<group>"; };
+		F3364162197AB907005F2D2C /* pickup.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pickup.caf; sourceTree = "<group>"; };
+		F3364163197AB907005F2D2C /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
+		F3364164197AB907005F2D2C /* TileMap.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TileMap.caf; sourceTree = "<group>"; };
+		F3364165197AB907005F2D2C /* tmw_desert_spacing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tmw_desert_spacing.png; sourceTree = "<group>"; };
+		F336416D197ABF45005F2D2C /* TileMap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TileMap.tmx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1429,8 +1445,24 @@
 				F3364151197AB86F005F2D2C /* HelloWorldScene.m */,
 				F3364153197AB86F005F2D2C /* IntroScene.h */,
 				F3364154197AB86F005F2D2C /* IntroScene.m */,
+				F336415E197AB907005F2D2C /* TileGameResources */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		F336415E197AB907005F2D2C /* TileGameResources */ = {
+			isa = PBXGroup;
+			children = (
+				F336415F197AB907005F2D2C /* hit.caf */,
+				F3364160197AB907005F2D2C /* meta_tiles.png */,
+				F3364161197AB907005F2D2C /* move.caf */,
+				F3364162197AB907005F2D2C /* pickup.caf */,
+				F3364163197AB907005F2D2C /* Player.png */,
+				F3364164197AB907005F2D2C /* TileMap.caf */,
+				F3364165197AB907005F2D2C /* tmw_desert_spacing.png */,
+				F336416D197ABF45005F2D2C /* TileMap.tmx */,
+			);
+			path = TileGameResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1503,25 +1535,33 @@
 			files = (
 				F3363EF2197AB86D005F2D2C /* Default@2x.png in Resources */,
 				F3363F05197AB86D005F2D2C /* Icon-120.png in Resources */,
+				F336416A197AB907005F2D2C /* Player.png in Resources */,
+				F3364169197AB907005F2D2C /* pickup.caf in Resources */,
 				F3363EFB197AB86D005F2D2C /* Icon@2x.png in Resources */,
 				F3363F0D197AB86D005F2D2C /* Icon-Small@2x.png in Resources */,
 				F3363EFF197AB86D005F2D2C /* Icon-72@2x.png in Resources */,
 				F3363EF0197AB86D005F2D2C /* Default.png in Resources */,
 				F3363EF9197AB86D005F2D2C /* Icon.png in Resources */,
 				F3363F07197AB86D005F2D2C /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
+				F3364167197AB907005F2D2C /* meta_tiles.png in Resources */,
+				F336416B197AB907005F2D2C /* TileMap.caf in Resources */,
 				F3363EF6197AB86D005F2D2C /* Default-Landscape~ipad.png in Resources */,
 				F3363F0B197AB86D005F2D2C /* Icon-Small.png in Resources */,
 				F3363F09197AB86D005F2D2C /* Icon-Small-50.png in Resources */,
 				F3364147197AB86F005F2D2C /* LICENSE_Chipmunk.txt in Resources */,
 				F3363EFD197AB86D005F2D2C /* Icon-72.png in Resources */,
+				F3364166197AB907005F2D2C /* hit.caf in Resources */,
 				F33640D9197AB86F005F2D2C /* LICENSE_CCBReader.txt in Resources */,
+				F336416C197AB907005F2D2C /* tmw_desert_spacing.png in Resources */,
 				F3364049197AB86E005F2D2C /* LICENSE_cocos2d.txt in Resources */,
 				F3363EF4197AB86D005F2D2C /* Default-568h@2x.png in Resources */,
+				F3364168197AB907005F2D2C /* move.caf in Resources */,
 				F3363F14197AB86D005F2D2C /* iTunesArtwork in Resources */,
 				F3363F0F197AB86D005F2D2C /* Icon-Spotlight-iOS7.png in Resources */,
 				F3363F03197AB86D005F2D2C /* Icon-76@2x.png in Resources */,
 				F3363F11197AB86D005F2D2C /* Icon-Spotlight-iOS7@2x.png in Resources */,
 				F3363F01197AB86D005F2D2C /* Icon-76.png in Resources */,
+				F336416E197ABF45005F2D2C /* TileMap.tmx in Resources */,
 				F3363F16197AB86D005F2D2C /* iTunesArtwork@2x in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1859,6 +1899,7 @@
 				F336415A197AB86F005F2D2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F336415B197AB86F005F2D2C /* Build configuration list for PBXNativeTarget "TileGame" */ = {
 			isa = XCConfigurationList;
@@ -1867,6 +1908,7 @@
 				F336415D197AB86F005F2D2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
